@@ -3,8 +3,7 @@
 
 Implement a **data flow orchestration** to process raw data, generate pipe-delimited load files in the path (/dataextract/yy/MM/dd/factstore) and lastly, loads the processed data model into a database table (dbo.factstore) for querying (see DDL-DML.sql).
 
-Pipe-delimited Data Schema
---------------------------
+### Pipe-delimited Data Schema
 DateID: date (yyyy-MM-dd)
 StoreID: Int
 ProductID: Int
