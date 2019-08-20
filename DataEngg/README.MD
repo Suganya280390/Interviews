@@ -1,11 +1,14 @@
 # Instructions
 
-Candidates are free to use any tools that is non-cloud based.
+Candidates are to choose and use only 1 set to implement the task. 
+Set 1. MSSQL Server, Apache Kafka, Nifi, HDFS, Hive
+or
+Set 2. MSSQL Server, Talend, MongoDB
 
 
 # Task
 
-Implement a **data flow orchestration** to process raw data, generate pipe-delimited load files in the path (/dataextract/yy/MM/dd/factstore) and lastly, loads the processed data model into a database table (dbo.factstore) for querying (see DDL-DML.sql).
+Implement a **data flow orchestration** to process raw data, generate pipe-delimited load files in the path (/dataextract/yy/MM/dd/factstore) and lastly, loads the processed data model into a database table (dbo.factstore) for querying (see sample DDL-DML.sql).
 
 ### Pipe-delimited Data Schema
 DateID: date (yyyy-MM-dd)
