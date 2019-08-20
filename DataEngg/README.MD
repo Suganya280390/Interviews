@@ -1,12 +1,12 @@
 # Instructions
 
-Candidates are to choose and use only 1 set to implement the task. 
+Candidates are to use only 1 set from the following to implement the task. 
 
-Set 1. MSSQL Server(for storage only) , Apache Kafka, Nifi, HDFS, Hive
+Set A. MSSQL Server(for storage only) , Apache Kafka, Nifi, HDFS, Hive
 
+Set B. MSSQL Server(for storage only) , Talend, MongoDB
 
-Set 2. MSSQL Server(for storage only) , Talend, MongoDB
-
+Please implement and document the steps in your github repository for us to set up the same environment as yours that will achive the same result as below. Good Luck! 
 
 
 # Task
