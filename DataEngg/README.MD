@@ -2,10 +2,10 @@
 
 Candidates are to choose and use only 1 set to implement the task. 
 
-Set 1. MSSQL Server, Apache Kafka, Nifi, HDFS, Hive
+Set 1. MSSQL Server(for storage only) , Apache Kafka, Nifi, HDFS, Hive
 
 
-Set 2. MSSQL Server, Talend, MongoDB
+Set 2. MSSQL Server(for storage only) , Talend, MongoDB
 
 
 
