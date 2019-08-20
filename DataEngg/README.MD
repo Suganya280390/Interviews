@@ -13,7 +13,7 @@ For verification purpose, we need the candidate to document the implemented step
 
 Implement a **data flow orchestration** to process raw data to generate pipe-delimited load files in the path (/dataextract/yy/MM/dd/factstore).
 
-Then, load the processed data model into a database table (dbo.factstore) for querying (see sample DDL-DML.sql).
+Then, load the processed data model into a database (name it dbo.factstore) for querying (see sample DDL-DML.sql).
 
 
 ### Pipe-delimited Data Schema
