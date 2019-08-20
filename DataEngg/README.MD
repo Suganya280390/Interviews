@@ -1,17 +1,20 @@
 # Instructions
 
-Candidates are to use only 1 set from the following to implement the task. 
+Candidates can choose 1 set of tools from the following to implement the task. Candidates can then choose to use a combination or only a single tool from that set.
 
-Set A. MSSQL Server(for storage only) , Apache Kafka, Nifi, HDFS, Hive
+Set A. Apache Kafka, Nifi, HDFS, Hive
 
-Set B. MSSQL Server(for storage only) , Talend, MongoDB
+Set B. Talend, MongoDB
 
-Please implement and document the steps in your github repository for us to set up the same environment as yours that will achive the same result as below. Good Luck! 
+For verification purpose, we need the candidate to document the implemented steps in your github repository for us to set up the same environment as yours that will achive the same result as below. 
 
 
 # Task
 
-Implement a **data flow orchestration** to process raw data, generate pipe-delimited load files in the path (/dataextract/yy/MM/dd/factstore) and lastly, loads the processed data model into a database table (dbo.factstore) for querying (see sample DDL-DML.sql).
+Implement a **data flow orchestration** to process raw data to generate pipe-delimited load files in the path (/dataextract/yy/MM/dd/factstore).
+
+Then, load the processed data model into a database table (dbo.factstore) for querying (see sample DDL-DML.sql).
+
 
 ### Pipe-delimited Data Schema
 DateID: date (yyyy-MM-dd)
