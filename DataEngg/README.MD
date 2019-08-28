@@ -4,7 +4,7 @@ Candidates can choose 1 set of tools from the following to implement the task. C
 
 Set A. Apache Kafka, Nifi, HDFS, Hive
 
-Set B. Talend, MongoDB
+Set B. Talend (Open Source), MongoDB
 
 For verification purpose, we need the candidate to document the implemented steps in your github repository for us to set up the same environment as yours that will achive the same result as below. 
 
