@@ -1,0 +1,44 @@
+Data orchestration process:
+
+Load all the tab delimited files to the path /dataextract/yy/MM/dd/factstore as pipe delimited using talend:
+
+1. Import the tMap,tFileInputDelimited,tFileOutputDelimited,tFileList
+
+2. Right click the tFileList componenet and pull an iterate connection to tFileInputDelimited and then pull main row from 
+	tFileInputDelimited .
+3. Using tMap connect the input file delimited to output file delimited
+
+4. In the filelist iterate - In Directory provide the file path and File mask as '*.txt'
+
+5. In the fileListDelimited settings 
+	File name as - ((String)globalMap.get("tFileList_1_CURRENT_FILEPATH"))
+	Row Seperator as "\n" and Field seperator as "\t"
+	Header 1
+6. Output Componenet tFileOutputDelimited settings and update the filename properties as "/dataextract/yy/MM/dd/factstore/factstore.txt" and row seperator as "\n" 
+ 	and column seperator as "|".
+
+7. save and execute the job.
+
+Query to get the count from Mongodb
+
+
+
+1.Query average number of stocks on hand by category
+
+
+db.factstore.aggregate([
+  { $lookup : { from : 'DimProducts', localField : 'ProductID', foreignField : 'ProductID', as : 'combined'} },
+  { $unwind: '$combined' },
+  { $group: { _id: 'avg_hands_quantity', avg : { $avg : '$combined.OnHandQuantity' } } }
+]);
+
+2.Query average number of stocks on hand by store
+
+
+db.factstore.aggregate([
+  { $lookup : { from : 'DimStores', localField : 'StoreID', foreignField : 'StoreID', as : 'combined'} },
+  { $unwind: '$combined' },
+  { $group: { _id: 'avg_hands_quantity', avg : { $avg : '$combined.OnHandQuantity' } } }
+]);
+
+
